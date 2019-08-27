@@ -209,4 +209,30 @@ ReactDOM.render(
   React.createElement('coolComponent', null),
 ]
 
+///////////////////////////////////////////////
+render() {
+  const logoutButton = (
+    <button onClick={this.logOut}>
+      <LogoutIcon />
+      Déconnexion
+    </button>
+  )
+
+  return (
+    <Card>
+      <CardTitle>
+        Oh le joli titre
+        {logoutButton}
+      </CardTitle>
+      …
+      <Footer>
+        © 2017 Des Gens Bien™ •
+        {logoutButton}
+      </Footer>
+    </Card>
+  )
+}
+////////////////////////////////////////////////////
+
+
 
